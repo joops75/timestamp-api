@@ -1,5 +1,6 @@
 var express = require('express')
 var app = express()
+var port = process.env.PORT
 
 var defaultMessage = 'Please enter a unix timestamp or natural date in the address bar at the end of the url ending in ".io", adding a "/" first'
 
@@ -42,4 +43,4 @@ app.get('/:time', function (req, res) {
     res.render('index', {message: JSON.stringify(output), message2: additionalMessage})
 })
 
-app.listen(8080)
+app.listen(port)
