@@ -1,8 +1,8 @@
 var express = require('express')
 var app = express()
-var port = process.env.PORT
+var port = process.env.PORT || 3000
 
-var defaultMessage = 'Please enter a unix timestamp or natural date in the address bar at the end of the url ending in ".io", adding a "/" first'
+var defaultMessage = 'Please enter a unix timestamp or natural date in the address bar at the end of the url, adding a "/" first if not already present.'
 
 var dateMaker = function(unix) {
     var date = new Date(unix * 1000)

@@ -2,8 +2,8 @@
   "name": "timestamp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "engines" : {
+  "main": "server.js",
+  "engines": {
     "node": "4.8.4",
     "npm": "2.15.11"
   },
